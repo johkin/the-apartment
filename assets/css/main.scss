@@ -1,0 +1,43 @@
+
+
+---
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles
+.feature__item {
+  .archive__item-teaser {
+    img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+/* Gallery grid for /galleri */
+#are-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem; /* space between items */
+}
+#are-gallery figure {
+  margin: 0; /* reset default figure margin */
+}
+#are-gallery .third { /* neutralize theme utility class inside our grid */
+  width: auto;
+  float: none;
+}
+#are-gallery a { display: block; }
+#are-gallery img {
+  width: 100%;
+  height: auto; /* keep original aspect ratio */
+  display: block;
+}
+#are-gallery figcaption {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin-top: 0.35rem;
+  color: inherit;
+}

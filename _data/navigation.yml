@@ -1,0 +1,9 @@
+main:
+  - title: "Hem"
+    url: /
+  - title: "Boka"
+    url: /boka/
+  - title: "Galleri"
+    url: /galleri/
+  - title: "Info"
+    url: /info/
