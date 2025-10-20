@@ -17,7 +17,7 @@ header:
   {% for file in gallery_images %}
     <figure class="third">
       <a href="{{ file.path }}">
-        <img src="{{ file.path }}" alt="{% capture alt %}{{ file.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}{% endcapture %}{{ alt }}">
+        <img src="{{ site.baseurl }}/{{ file.path }}" alt="{% capture alt %}{{ file.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}{% endcapture %}{{ alt }}">
       </a>
       <figcaption>{% capture caption %}{{ file.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}{% endcapture %}{{ caption }}</figcaption>
     </figure>
