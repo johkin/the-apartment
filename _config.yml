@@ -1,7 +1,7 @@
 title: "Lägenheten i Åre"
 description: "Hyr vår mysiga lägenhet i Åre – nära backar, natur och restauranger."
-url: ""  # Set your custom domain or leave empty for user.github.io/repo
-baseurl: ""  # e.g. /the-apartment if not publishing to a user/organization site
+# url: ""  # Set your custom domain or leave empty for user.github.io/repo
+baseurl: "/the-apartment"  # e.g. /the-apartment if not publishing to a user/organization site
 
 # Minimal Mistakes configuration
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
