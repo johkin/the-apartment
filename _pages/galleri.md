@@ -16,7 +16,7 @@ header:
   {% assign gallery_images = gallery_images | sort: "path" %}
   {% for file in gallery_images %}
     <figure class="third">
-      <a href="{{ file.path }}">
+      <a href="{{ site.baseurl }}/{{ file.path }}">
         <img src="{{ site.baseurl }}/{{ file.path }}" alt="{% capture alt %}{{ file.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}{% endcapture %}{{ alt }}">
       </a>
       <figcaption>{% capture caption %}{{ file.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}{% endcapture %}{{ caption }}</figcaption>
